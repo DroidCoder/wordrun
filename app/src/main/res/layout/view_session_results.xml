@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg">
+
+  <TextView
+      style="@style/textTitles"
+      android:id="@+id/results_label_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/results"
+      android:layout_alignParentTop="true"/>
+
+  <Button
+      android:id="@+id/results_bnt_restart"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/elements_spacing_short"
+      android:text="@string/restart"/>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/results_label_title"
+      android:layout_above="@id/results_bnt_restart"
+      android:gravity="center">
+
+    <TextView
+        style="@style/textMain"
+        android:id="@+id/results_label_correct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:layout_margin="@dimen/elements_spacing"
+        android:text="@string/correct_answers"/>
+
+
+    <TextView
+        style="@style/textMain"
+        android:id="@+id/results_label_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:layout_margin="@dimen/elements_spacing"
+        android:text="@string/wrong_answers"/>
+
+
+    <TextView
+        style="@style/textMain"
+        android:id="@+id/results_label_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:layout_margin="@dimen/elements_spacing"
+        android:text="@string/timeouts"/>
+
+
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:buttonStyle">@style/simpleButtonStyle</item>
+
+  </style>
+
+
+  <style name="textTitles">
+    <item name="android:textSize">@dimen/text_title</item>
+    <item name="android:background">@color/app_accent</item>
+    <item name="android:textColor">@color/text_main_invert</item>
+    <item name="android:padding">@dimen/elements_spacing</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="textMain">
+    <item name="android:textSize">@dimen/text_title</item>
+    <item name="android:layout_margin">@dimen/elements_spacing</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="textFeedback">
+    <item name="android:textSize">@dimen/text_title</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@color/app_bg</item>
+  </style>
+
+  <style name="simpleButtonStyle" parent="android:style/Widget.Button">
+    <item name="android:background">@drawable/button_states</item>
+    <item name="android:padding">@dimen/elements_spacing</item>
+    <item name="android:textSize">@dimen/text_main</item>
+    <item name="android:textColor">@color/text_main_invert</item>
+  </style>
+
+</resources>

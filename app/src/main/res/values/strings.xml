@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Words Run</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+
+
+  <string name="correct">Correct!</string>
+  <string name="wrong">wrong :(</string>
+  <string name="timeout">Skipped</string>
+
+
+  <string name="results">results</string>
+  <string name="correct_answers">correct answers:</string>
+  <string name="wrong_answers">wrong answers:</string>
+  <string name="timeouts">skipped:</string>
+  <string name="restart">restart</string>
+
+</resources>

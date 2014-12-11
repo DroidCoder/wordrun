@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".MainActivity"
+    android:animateLayoutChanges="true"
+    >
+
+
+  <com.droidcoder.wordsrun.view.QuestionView
+      android:id="@+id/questionView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+
+  <com.droidcoder.wordsrun.view.AnswerFeedbackView
+      style="@style/textFeedback"
+      android:id="@+id/label_result"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="@dimen/line_div_height"
+      android:visibility="gone"
+      android:clickable="true"/>
+
+  <com.droidcoder.wordsrun.view.ResultsView
+      android:id="@+id/resultsView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/app_bg"
+      android:visibility="gone"
+      android:clickable="true"/>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    >
+
+
+  <TextView
+      style="@style/textTitles"
+      android:id="@+id/label_given_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:text="Given World!"/>
+
+  <LinearLayout
+      android:id="@+id/buttons_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingTop="@dimen/elements_spacing_short"
+      android:paddingBottom="@dimen/elements_spacing_short"
+      android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/button_left_choice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/elements_spacing_short"
+        android:layout_marginRight="@dimen/elements_spacing_short"
+        android:text="↑↑↑"/>
+
+    <Button
+        android:id="@+id/button_right_choice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/elements_spacing_short"
+        android:layout_marginLeft="@dimen/elements_spacing_short"
+        android:text="↑↑↑"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/words_fall_area"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/buttons_container"
+      android:layout_below="@id/label_given_text">
+
+
+    <LinearLayout
+        android:id="@+id/words_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+      <TextView
+          style="@style/textMain"
+          android:id="@+id/label_left_word"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          tools:text="one"/>
+
+      <TextView
+          style="@style/textMain"
+          android:id="@+id/label_right_word"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          tools:text="two"/>
+
+    </LinearLayout>
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/line_div_height"
+      android:layout_above="@id/buttons_container"
+      android:background="@color/line_sep"/>
+</RelativeLayout>
